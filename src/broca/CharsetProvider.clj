@@ -13,4 +13,6 @@
     (when (contains? charsets (.toLowerCase name))
       (Charset/forName (get charsets (.toLowerCase name))))))
 
-(defn -charsets [])
+(defn -charsets [this]
+  (.iterator (or (keys *charsets*)
+                 [])))

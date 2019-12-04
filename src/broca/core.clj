@@ -1,5 +1,5 @@
 (ns broca.core)
 
-(def *charsets* nil)
+(def ^:dynamic *charsets* nil)
 
-(def *charset-debug* nil)
+(def ^:dynamic *charset-debug* nil)

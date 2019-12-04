@@ -1,13 +1,13 @@
-(defproject broca "1.0.1"
+(defproject sonian/broca "1.0.0"
   :description "broca allows you to map a charset name to another charset using binding"
-  :dependencies [[org.clojure/clojure "1.2.0"]]
+  :dependencies [[org.clojure/clojure "1.10.0"]]
   :aot [broca.CharsetProvider])
 
 (ns leiningen.char-set-install
   (:require [leiningen.jar]
             [robert.hooke]))
 
-(declare *project*)
+(declare ^:dynamic *project*)
 
 (robert.hooke/add-hook
  (resolve 'leiningen.jar/filespecs)
